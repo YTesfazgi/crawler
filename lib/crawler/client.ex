@@ -8,20 +8,16 @@ defmodule Crawler.Client do
 
   ## Examples
 
-      iex> "https://news.ycombinator.com"
+      iex> "https://www.ft.com/"
       |> Crawler.Client.stream_urls_from()
       |> Enum.take(10)
 
-      ["https://news.ycombinator.com",
-      "https://news.ycombinator.com/news",
-      "https://news.ycombinator.com/newest",
-      "https://news.ycombinator.com/front",
-      "https://news.ycombinator.com/newcomments",
-      "https://news.ycombinator.com/ask",
-      "https://news.ycombinator.com/show",
-      "https://news.ycombinator.com/jobs",
-      "https://news.ycombinator.com/submit",
-      "https://news.ycombinator.com/login?goto=news"]
+      ["https://www.ft.com/accessibility", "https://www.ft.com//#site-navigation",
+      "https://www.ft.com//#site-content", "https://www.ft.com//#site-footer",
+      "https://markets.ft.com/data", "https://www.ft.com///login?location=/",
+      "https://www.ft.com///products?segmentId=f860e6c2-18af-ab30-cd5e-6e3a456f9265",
+      "https://www.ft.com//#o-header-drawer",
+      "https://www.ft.com//#o-header-search-primary", "https://www.ft.com///"]
   """
 
   alias Crawler.Parser
